@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: nunacare-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nunacare
+      POSTGRES_USER: nunacare
+      POSTGRES_PASSWORD: nunacare_dev_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - nunacare_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nunacare -d nunacare"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  nunacare_postgres_data:

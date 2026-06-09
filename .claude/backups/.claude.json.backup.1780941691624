@@ -1,0 +1,30 @@
+{
+  "installMethod": "native",
+  "autoUpdates": false,
+  "firstStartTime": "2026-05-20T15:32:52.449Z",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "migrationVersion": 13,
+  "userID": "baa61d483e1b6f2d44d4d3b5e6d266a042dad5b98b03e775242e0ac3ad40c660",
+  "changelogLastFetched": 1780941624898,
+  "autoUpdatesProtectedForNative": true,
+  "oauthAccount": {
+    "accountUuid": "8ae2da7e-d5da-4004-b6a5-bd941637cbf1",
+    "emailAddress": "abdullahsauafth@gmail.com",
+    "organizationUuid": "92fc9deb-6061-4ebb-8842-0e1f40ceaa13",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2025-11-22T07:46:20.439321Z",
+    "subscriptionCreatedAt": "2026-06-08T17:38:54.712155Z",
+    "ccOnboardingFlags": {},
+    "claudeCodeTrialEndsAt": null,
+    "claudeCodeTrialDurationDays": null,
+    "seatTier": null,
+    "displayName": "abdullah",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "abdullahsauafth@gmail.com's Organization"
+  },
+  "claudeCodeFirstTokenDate": "2026-06-08T18:01:17.817321Z"
+}

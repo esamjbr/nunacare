@@ -1,0 +1,6 @@
+/*
+ * App.css — intentionally empty.
+ * All layout and theming is handled in index.css + Tailwind.
+ * The old Vite boilerplate (#root max-width, .logo, etc.) has been removed
+ * because it conflicted with the fixed app-shell layout.
+ */

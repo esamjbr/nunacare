@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── Light palette (default) — Warm & Tactile ───────────────────────────── */
+  :root {
+    /* Accent / action — warm brown */
+    --color-primary: 139 74 43;
+    --color-accent-soft: 212 132 92;
+    --color-primary-container: 212 132 92;
+    --color-primary-light: 251 234 224;
+    --color-primary-dark: 100 48 25;
+    /* Surfaces */
+    --color-background: 251 246 236;
+    --color-surface: 255 252 246;
+    --color-soft-surface: 242 232 220;
+    --color-surface-sunk: 242 232 220;
+    --color-beige: 242 232 220;
+    --color-cream: 255 252 246;
+    /* Text */
+    --color-text-primary: 45 33 24;
+    --color-text-secondary: 92 74 58;
+    --color-text-hint: 138 120 104;
+    --color-text-faint: 176 153 132;
+    /* Status */
+    --color-error-soft: 255 218 214;
+    --color-error-text: 147 0 10;
+    --color-success-soft: 232 245 233;
+    --color-success-text: 21 128 61;
+    /* Borders */
+    --color-border: 217 175 130;
+    --color-border-hairline: 217 175 130;
+    /* Category tints */
+    --color-teal-soft: 244 232 216;
+    --color-feeding-tint: 251 234 224;
+    --color-diaper-tint: 246 228 220;
+    --color-sleep-soft: 240 230 220;
+    --color-warm-soft: 251 233 216;
+    --color-lavender-soft: 248 238 228;
+    /* Bottom nav height + safe area */
+    --nav-height: 64px;
+  }
+
+  /* ── Night palette ───────────────────────────────────────────────────────── */
+  /*
+   * Dim, warm-tinted, low-blue. NOT cold pure-black.
+   * Applied by toggling class="night" on <html>.
+   * Light palette is untouched — removing the class restores it exactly.
+   */
+  html.night {
+    --color-primary: 217 154 108;
+    --color-accent-soft: 156 90 54;
+    --color-primary-container: 80 48 28;
+    --color-primary-light: 70 42 22;
+    --color-primary-dark: 45 28 15;
+    --color-background: 28 23 20;
+    --color-surface: 36 29 24;
+    --color-soft-surface: 43 34 28;
+    --color-surface-sunk: 43 34 28;
+    --color-beige: 43 34 28;
+    --color-cream: 36 29 24;
+    --color-text-primary: 240 230 220;
+    --color-text-secondary: 201 184 159;
+    --color-text-hint: 154 134 112;
+    --color-text-faint: 110 88 66;
+    --color-error-soft: 82 28 28;
+    --color-error-text: 255 148 148;
+    --color-success-soft: 18 34 22;
+    --color-success-text: 134 239 172;
+    --color-border: 68 52 40;
+    --color-border-hairline: 80 60 44;
+    --color-teal-soft: 46 36 26;
+    --color-feeding-tint: 58 36 24;
+    --color-diaper-tint: 54 34 22;
+    --color-sleep-soft: 42 32 24;
+    --color-warm-soft: 52 38 24;
+    --color-lavender-soft: 46 30 22;
+  }
+
+  /* ── App-shell layout: prevent body/page scroll ─────────────────────────── */
+  html {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    /* Dark letterbox around the mobile frame — stable in both modes */
+    @apply bg-[#1A1210] text-text-primary antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #root {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  html[dir="rtl"] body {
+    font-family: 'Tajawal', system-ui, sans-serif;
+  }
+
+  /* Focus ring — visible but warm */
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border/40 rounded-full;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    @apply opacity-50 cursor-pointer;
+  }
+
+  /* Range input accent */
+  input[type="range"] {
+    accent-color: rgb(var(--color-primary));
+  }
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .pb-nav {
+    padding-bottom: calc(var(--nav-height) + env(safe-area-inset-bottom, 0px) + 8px);
+  }
+  /* Serif display helper */
+  .font-display {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+}
