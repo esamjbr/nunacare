@@ -146,6 +146,22 @@
   input[type="range"] {
     accent-color: rgb(var(--color-primary));
   }
+
+  /* ── iOS Safari input-zoom fix ──────────────────────────────────────────────
+   * iOS Safari auto-zooms into any input/select/textarea whose font-size is
+   * below 16px and never zooms back out when the field blurs. Force a 16px
+   * minimum on small (touch/mobile) viewports only. Desktop is wider than the
+   * breakpoint, so the centered mobile frame keeps its intended 14px design.
+   * (Do NOT "fix" this with maximum-scale/user-scalable — that breaks
+   * pinch-to-zoom accessibility and newer iOS ignores it anyway.)
+   */
+  @media (max-width: 768px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px !important;
+    }
+  }
 }
 
 @layer utilities {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/NunaCare.Api.Tests.csproj": {}
+    "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/NunaCare.Api.Tests.csproj": {}
   },
   "projects": {
-    "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/NunaCare.Api.Tests.csproj": {
+    "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/NunaCare.Api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/NunaCare.Api.Tests.csproj",
+        "projectUniqueName": "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/NunaCare.Api.Tests.csproj",
         "projectName": "NunaCare.Api.Tests",
-        "projectPath": "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/NunaCare.Api.Tests.csproj",
+        "projectPath": "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/NunaCare.Api.Tests.csproj",
         "packagesPath": "/home/asauafth/.nuget/packages/",
-        "outputPath": "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/obj/",
+        "outputPath": "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/asauafth/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/asauafth/Desktop/local projects/pregnency/backend/NunaCare.Api.csproj": {
-                "projectPath": "/home/asauafth/Desktop/local projects/pregnency/backend/NunaCare.Api.csproj"
+              "/home/asauafth/Desktop/local projects/nunacare/backend/NunaCare.Api.csproj": {
+                "projectPath": "/home/asauafth/Desktop/local projects/nunacare/backend/NunaCare.Api.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "/home/asauafth/Desktop/local projects/pregnency/backend/NunaCare.Api.csproj": {
+    "/home/asauafth/Desktop/local projects/nunacare/backend/NunaCare.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/asauafth/Desktop/local projects/pregnency/backend/NunaCare.Api.csproj",
+        "projectUniqueName": "/home/asauafth/Desktop/local projects/nunacare/backend/NunaCare.Api.csproj",
         "projectName": "NunaCare.Api",
-        "projectPath": "/home/asauafth/Desktop/local projects/pregnency/backend/NunaCare.Api.csproj",
+        "projectPath": "/home/asauafth/Desktop/local projects/nunacare/backend/NunaCare.Api.csproj",
         "packagesPath": "/home/asauafth/.nuget/packages/",
-        "outputPath": "/home/asauafth/Desktop/local projects/pregnency/backend/obj/",
+        "outputPath": "/home/asauafth/Desktop/local projects/nunacare/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/asauafth/.nuget/NuGet/NuGet.Config"

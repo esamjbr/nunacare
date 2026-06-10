@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kwRc2Z0d5xk=",
+  "dgSpecHash": "M1Pk2mqVfqU=",
   "success": true,
-  "projectFilePath": "/home/asauafth/Desktop/local projects/pregnency/backend.Tests/NunaCare.Api.Tests.csproj",
+  "projectFilePath": "/home/asauafth/Desktop/local projects/nunacare/backend.Tests/NunaCare.Api.Tests.csproj",
   "expectedPackageFiles": [
     "/home/asauafth/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.8/microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
     "/home/asauafth/.nuget/packages/microsoft.aspnetcore.mvc.testing/8.0.8/microsoft.aspnetcore.mvc.testing.8.0.8.nupkg.sha512",
